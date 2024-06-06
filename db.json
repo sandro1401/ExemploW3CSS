@@ -1,0 +1,40 @@
+{
+    "produtos": [
+        {
+            "id": 1,
+            "nome": "Ração A",
+            "imagem": "pedigree.jpg",
+            "preço": 29.99
+        },
+        {
+            "id": 2,
+            "nome": "Ração B",
+            "imagem": "pedigree.jpg",
+            "preço": 49.99
+        },
+        {
+            "id": 3,
+            "nome": "Ração C",
+            "imagem": "pedigree.jpg",
+            "preço": 19.99
+        },
+        {
+            "id": 4,
+            "nome": "Ração D",
+            "imagem": "pedigree.jpg",
+            "preço": 99.99
+        },
+        {
+            "id": 5,
+            "nome": "Ração E",
+            "imagem": "pedigree.jpg",
+            "preço": 199.99
+        },
+        {
+            "id": 6,
+            "nome": "Ração F",
+            "imagem": "pedigree.jpg",
+            "preço": 9.99
+        }
+    ]
+}
