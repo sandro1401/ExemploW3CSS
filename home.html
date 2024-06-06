@@ -53,9 +53,11 @@
 			  	<span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
 			</div>
 		</div>
-		<div id="produtos" class="w3-row w3-container w3-margin-top">
+		
+		<div id="produtos" class="w3-row w3-container w3-margin-top"></div>
+		
 
-		</div>
+		<div id="produtosBD" class="w3-row w3-container w3-margin-top"></div>
 
 		
 	</main>
@@ -106,7 +108,15 @@
 	  dots[slideIndex-1].className += " w3-white";
 	}
 	
-	
+	//Tratamento do banco de dados
+	fetch('http://localhost:3000/produtos/')
+	.then(data => {
+		data.json()
+		.then(produtos => {
+			document.getElementById('produtosBD').innerHTML = JSON.stringify(produtos);
+		})
+		console.log(produtos)
+	})
 	
 	
 	</script>
