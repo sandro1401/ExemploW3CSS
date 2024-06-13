@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Petshop</title>
 	
-	
 	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<style>
@@ -53,20 +52,16 @@
 			  	<span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
 			</div>
 		</div>
-		
-		<div id="produtos" class="w3-row w3-container w3-margin-top"></div>
-		
 
-		<div id="produtosBD" class="w3-row w3-container w3-margin-top"></div>
+		<div id="produtos" class="w3-row w3-container w3-margin-top">
+		</div>
 
-		
 	</main>
 
 	<footer class="w3-container w3-margin-top w3-black ">
 		<p class="w3-center">Realizado por Ries (imagens retiradas de petz.com.br)</p>
 	</footer>
 </body>
-
 <script src="produtos.js"></script>
 
 <script>
@@ -107,18 +102,6 @@
 	  x[slideIndex-1].style.display = "block";  
 	  dots[slideIndex-1].className += " w3-white";
 	}
-	
-	//Tratamento do banco de dados
-	fetch('http://localhost:3000/produtos/')
-	.then(data => {
-		data.json()
-		.then(produtos => {
-			document.getElementById('produtosBD').innerHTML = JSON.stringify(produtos);
-		})
-		console.log(produtos)
-	})
-	
-	
 	</script>
 		
 </html>
